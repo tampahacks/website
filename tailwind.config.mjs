@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Space Mono", "monospace"],
+        display: ["Germania One", "serif"],
         sans: ["Space Grotesk", "sans-serif"],
         jersey: ['"Jersey 15"', "monospace"],
       },
@@ -15,9 +15,6 @@ export default {
       },
     },
   },
-  safelist: [
-    "text-counterspell-pink",
-    "text-tampahacks-blue",
-  ],
+  safelist: ["text-counterspell-pink", "text-tampahacks-blue"],
   plugins: [],
 };
