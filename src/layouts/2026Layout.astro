@@ -1,0 +1,33 @@
+---
+import "@fontsource/space-mono";
+import "@fontsource/space-grotesk";
+import "@fontsource/germania-one";
+
+const { ogTitle, ogDesc } = Astro.props;
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:type" content="website" />
+    <meta name="apple-mobile-web-app-title" content="TampaHacks" />
+    <meta property="og:site_name" content="TampaHacks" />
+    <meta property="og:title" content={ogTitle ?? "TampaHacks"} />
+    <meta
+      name="description"
+      property="og:description"
+      content={ogDesc ??
+        "Creating new opportunities for high school hackers in the Tampa Bay area."}
+    />
+    <meta property="og:image" content="https://tampahacks.com/logo.png" />
+
+    <title>TampaHacks 2026</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

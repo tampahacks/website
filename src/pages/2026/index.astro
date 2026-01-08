@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+
+import Layout from "../../layouts/2026Layout.astro";
+
+import tampahacks2026 from "../../assets/tampahacks2026.png";
+import boat from "../../assets/boat.png";
+import codeConstellation from "../../assets/code-constellation.png";
+---
+
+<Layout>
+  <main
+    class="flex min-h-screen w-screen flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-gray-900"
+  >
+    <div class="grid grid-cols-2 items-center p-10">
+      <Image src={tampahacks2026} alt="TampaHacks 2026 logo" />
+      <div class="flex flex-col items-center gap-10">
+        <p class="text-center text-4xl text-white">
+          February 28 - March 1<br />
+          24 hours<br />
+          Free
+        </p>
+        <a href="/2026/rsvp" class="text-6xl font-bold text-white">RSVP</a>
+      </div>
+    </div>
+  </main>
+
+  <div class="fixed bottom-0 h-20 w-screen bg-[url(/waves.png)]">
+    <Image src={boat} alt="Boat" class="absolute bottom-10 left-64" />
+  </div>
+
+  <div class="fixed left-[40%] top-20">
+    <Image src={codeConstellation} alt="Constellation looking like </>" />
+  </div>
+</Layout>
