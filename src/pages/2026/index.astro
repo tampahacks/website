@@ -12,24 +12,53 @@ import codeConstellation from "../../assets/code-constellation.png";
   <main
     class="flex min-h-screen w-screen flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-gray-900"
   >
-    <div class="grid grid-cols-2 items-center p-10">
-      <Image src={tampahacks2026} alt="TampaHacks 2026 logo" />
-      <div class="flex flex-col items-center gap-10">
-        <p class="text-center text-4xl text-white">
-          February 28 - March 1<br />
-          24 hours<br />
-          Free
-        </p>
-        <a href="/2026/rsvp" class="text-6xl font-bold text-white">RSVP</a>
+    <div class="grid grid-cols-2 items-start">
+      <div class="flex flex-col">
+        <Image src={tampahacks2026} alt="TampaHacks 2026 logo" class="pt-20" />
+        <a
+          href="/2026/rsvp"
+          class="w-fit self-center rounded-md bg-[#005509] px-8 py-5 text-center font-display text-4xl font-bold text-white"
+        >
+          RSVP</a
+        >
+      </div>
+
+      <div
+        class="flex min-h-screen flex-col items-center justify-center gap-10"
+      >
+        <div
+          class="flex max-w-3xl flex-col items-center gap-5 self-center rounded-lg bg-black bg-opacity-40 p-8 text-white"
+        >
+          <p class="text-center text-3xl leading-relaxed">
+            February 28 - March 1<br />
+            24 hours<br />
+            Free
+          </p>
+          <hr class="w-full border-slate-700" />
+          <p class="text-xl">
+            <span class="font-bold">what's a hackathon?</span><br />
+            a hackathon is a social coding marathon where you team up to build projects
+            for a weekend!
+          </p>
+          <p class="text-xl">
+            <span class="font-bold">do I need experience?</span><br />
+            you don't need any experience to come to TampaHacks! we'll be running
+            workshops to get you started and help you along the way. if you'd like
+            to get a head start, check out <a
+              href="https://guides.hackclub.com/"
+              class="underline">hack club guides!</a
+            >
+          </p>
+        </div>
       </div>
     </div>
+
+    <div class="fixed bottom-0 h-20 w-screen bg-[url(/waves.png)]">
+      <Image src={boat} alt="Boat" class="absolute bottom-5 left-64" />
+    </div>
+
+    <div class="fixed left-[40%] top-20">
+      <Image src={codeConstellation} alt="Constellation looking like </>" />
+    </div>
   </main>
-
-  <div class="fixed bottom-0 h-20 w-screen bg-[url(/waves.png)]">
-    <Image src={boat} alt="Boat" class="absolute bottom-10 left-64" />
-  </div>
-
-  <div class="fixed left-[40%] top-20">
-    <Image src={codeConstellation} alt="Constellation looking like </>" />
-  </div>
 </Layout>
