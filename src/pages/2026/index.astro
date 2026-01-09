@@ -10,9 +10,9 @@ import codeConstellation from "../../assets/code-constellation.png";
 
 <Layout>
   <main
-    class="flex min-h-screen w-screen flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-gray-900"
+    class="relative flex min-h-screen w-screen flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-gray-900"
   >
-    <div class="grid grid-cols-2 items-start">
+    <div class="grid grid-cols-1 items-start md:grid-cols-2">
       <div class="flex flex-col">
         <Image src={tampahacks2026} alt="TampaHacks 2026 logo" class="pt-20" />
         <a
@@ -24,23 +24,23 @@ import codeConstellation from "../../assets/code-constellation.png";
       </div>
 
       <div
-        class="flex min-h-screen flex-col items-center justify-center gap-10"
+        class="flex min-h-screen flex-col items-center justify-start py-10 md:justify-center md:py-0"
       >
         <div
-          class="flex max-w-3xl flex-col items-center gap-5 self-center rounded-lg bg-black bg-opacity-40 p-8 text-white"
+          class="flex max-w-sm flex-col items-center gap-5 self-center rounded-lg bg-black bg-opacity-40 p-8 text-white md:max-w-3xl"
         >
-          <p class="text-center text-3xl font-bold leading-relaxed">
+          <p class="text-center text-2xl font-bold leading-relaxed md:text-3xl">
             February 28 - March 1<br />
             24 hours<br />
             Free
           </p>
           <hr class="w-full border-slate-700" />
-          <p class="text-xl">
+          <p class="text-lg">
             <span class="font-bold">what's a hackathon?</span><br />
             a hackathon is a social coding marathon where you team up to build projects
             for a weekend!
           </p>
-          <p class="text-xl">
+          <p class="text-lg">
             <span class="font-bold">do I need experience?</span><br />
             you don't need any experience to come to TampaHacks! we'll be running
             workshops to get you started and help you along the way. if you'd like
@@ -53,11 +53,15 @@ import codeConstellation from "../../assets/code-constellation.png";
       </div>
     </div>
 
-    <div class="fixed bottom-0 h-20 w-screen bg-[url(/waves.png)]">
-      <Image src={boat} alt="Boat" class="absolute bottom-5 left-96" />
+    <div class="absolute bottom-0 h-20 w-screen bg-[url(/waves.png)]">
+      <Image
+        src={boat}
+        alt="Boat"
+        class="absolute bottom-5 left-16 origin-bottom scale-50 md:left-96 md:scale-100"
+      />
     </div>
 
-    <div class="fixed left-[35%] top-16">
+    <div class="absolute left-[35%] top-8 scale-50 md:top-16 md:scale-100">
       <Image src={codeConstellation} alt="Constellation looking like </>" />
     </div>
   </main>
