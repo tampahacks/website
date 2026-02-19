@@ -20,9 +20,9 @@ import Counterspell8 from "../assets/photos/counterspell8.jpg";
 
 import Layout from "../layouts/Layout.astro";
 import Event from "../components/Event.astro";
-import Email from "../components/Email.astro";
 import CounterspellTampaLogo from "../assets/counterspell-tampa.png";
 import TampaHacksLogo from "../assets/tampahacks.png";
+import TampaHacks2026Logo from "../assets/tampahacks2026.png";
 ---
 
 <Layout>
@@ -34,10 +34,17 @@ import TampaHacksLogo from "../assets/tampahacks.png";
     </p>
     <section class="flex w-4/5 flex-col items-center justify-start gap-5">
       <h2
-        class="font-display text-center text-3xl font-bold text-white md:text-5xl"
+        class="text-center font-display text-3xl font-bold text-white md:text-5xl"
       >
         Events
       </h2>
+      <Event
+        name="TampaHacks 2026"
+        desc="make cool stuff. 24 hours. free."
+        color="tampahacks-green"
+        image={TampaHacks2026Logo}
+        link="/2026"
+      />
       <Event
         name="Counterspell Tampa"
         desc="A beginner friendly game jam that happened in 60 cities around the world!"
@@ -56,7 +63,7 @@ import TampaHacksLogo from "../assets/tampahacks.png";
     <section class="py-20">
       <a
         href="https://luma.com/tampahacks"
-        class="font-display block rounded-lg border-4 border-black bg-tampahacks-blue p-4 text-center text-3xl text-white transition-all hover:scale-105 md:text-4xl"
+        class="block rounded-lg border-4 border-black bg-tampahacks-blue p-4 text-center font-display text-3xl text-white transition-all hover:scale-105 md:text-4xl"
       >
         Get notified when we have an announcement!
       </a>
